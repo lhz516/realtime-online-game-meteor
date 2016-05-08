@@ -1,0 +1,17 @@
+<head>
+  <title>simple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+</body>
+
+<template name="home">
+    <input type="text" /><button id="update-nick-name">Set my Name</button>
+    <p><a id="create-room" href="">Create a room</a></p>
+    {{#each rooms}}
+        <p><a class="join-room" href="" data-value="{{name}}">{{name}} hi</a></p>
+    {{/each}}
+    <div class="message"></div>
+</template>
